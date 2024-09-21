@@ -1,0 +1,180 @@
+/* Global colour variables */
+:root {
+    --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
+    --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+	overflow-y:scroll;
+}
+
+body {
+    font-size: 1.1rem;
+    margin: 0 0 4rem 0;
+    padding: 0 0px;
+    background-image: url("bg03.svg");
+	background-size: 100%;
+	color: var(--text);
+    line-height: 1.6;
+}
+
+header, main{
+    margin: 0px auto;
+    max-width: 50rem;
+	width: 85%;
+	background: white;
+}
+
+header{
+	margin: 2rem auto auto auto;
+	border-top: 0.125rem solid black;
+	border-right: 0.125rem solid black;
+	border-left: 0.125rem solid black;
+	box-shadow: 0.313rem 0.313rem black;
+	padding: 1rem;
+	border-top-left-radius: 2rem; 
+}
+
+main{
+	border-right: 0.125rem solid black;
+	border-left: 0.125rem solid black;
+	border-bottom: 0.125rem solid black;
+	box-shadow: 0.313rem 0.313rem black;
+	padding: 1rem 0 0 0;
+	border-bottom-right-radius: 2rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    padding: 0.6rem 0 0.6rem 0;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    padding: 0.6rem 0 0.6rem 0;
+    text-align: center;
+	opacity: 0.4;
+}
+
+header{
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1;
+}
+
+@media(max-width:500px) {
+    body {
+        margin: 0 0 4rem 0;
+        padding: 0 0px;
+		min-width: 360px;
+		font-size: 0.8rem;
+    }
+	
+	header{
+		border: none;
+		box-shadow: 0.1rem 0.1rem lightgrey;
+		width: 95%;
+	}
+
+	main{
+		border: none;
+		box-shadow: 0.1rem 0.1rem lightgrey;
+		width: 95%;
+	}
+	
+	ol{
+		padding-left: 0.5rem;
+		font-size: 0.55rem;
+	}
+	
+	div{
+		font-size: 0.55rem;
+	}
+}
+
+:root { scroll-behavior: smooth; }
+
+.stt {
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	z-index: 9;
+	font-size: 0.8rem;
+	background-color: white;
+	color: black;
+	padding: 0.05rem 0.5rem;
+	border: 1px solid grey;
+	box-shadow: 0.1rem 0.1rem grey;
+	text-decoration: none;
+	opacity: 0.4;
+	border-bottom-right-radius: 0.4rem;
+	border-top-left-radius: 0.4rem;
+}
+
+.stt:active {
+	color: yellow;
+	background-color: purple;
+}
+
+ol{
+	margin: 1rem;
+}
+
+li{
+	padding: 0.3rem 0.1rem 1rem 0;
+	color: red;
+}
+
+hr{
+	width: 85%;
+}
+
+.divtable{
+	display: flex;
+	color: teal;
+	font-size: 0.7rem;
+	border-bottom: 1px solid black;
+}
+
+.divdata{
+	padding-left: 5px;
+	width: 12.5%;
+	border-left: 1px solid black;
+}
+
+.divdata:first-child{
+	border-left: none;
+}
+
+.divdata:empty{
+	background-color: lightgrey;
+}
+
+.divtablehd{
+	display: flex;
+	color: black;
+	font-size: 0.7rem;
+	border-bottom: none;
+	background-color: yellow;
+	text-align: center;
+	position: sticky;
+	top: 0;
+}
+
+.divdatax{
+	padding-left: 5px;
+	width: 12.5%;
+	border-left: 1px solid black;
+	background-color: black;
+}
