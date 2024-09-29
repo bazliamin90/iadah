@@ -17,7 +17,6 @@ body {
     font-size: 1.1rem;
     margin: 0 0 4rem 0;
     padding: 0 0px;
-    background-image: url("bg03.svg");
 	background-size: 100%;
 	color: var(--text);
     line-height: 1.6;
@@ -32,21 +31,6 @@ header, main{
 
 header{
 	margin: 2rem auto auto auto;
-	border-top: 0.125rem solid black;
-	border-right: 0.125rem solid black;
-	border-left: 0.125rem solid black;
-	box-shadow: 0.313rem 0.313rem black;
-	padding: 1rem;
-	border-top-left-radius: 2rem; 
-}
-
-main{
-	border-right: 0.125rem solid black;
-	border-left: 0.125rem solid black;
-	border-bottom: 0.125rem solid black;
-	box-shadow: 0.313rem 0.313rem black;
-	padding: 1rem 0 0 0;
-	border-bottom-right-radius: 2rem;
 }
 
 header h1 {
@@ -75,22 +59,12 @@ h1,h2,h3,h4,h5,h6 {
 
 @media(max-width:500px) {
     body {
-        margin: 0 0 4rem 0;
-        padding: 0 0px;
 		min-width: 360px;
-		font-size: 0.8rem;
+		font-size: 0.7rem;
     }
 	
-	header{
-		border: none;
-		box-shadow: 0.1rem 0.1rem lightgrey;
-		width: 97%;
-	}
-
 	main{
-		border: none;
-		box-shadow: 0.1rem 0.1rem lightgrey;
-		width: 97%;
+		width: 100%;
 	}
 	
 	ol{
